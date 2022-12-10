@@ -14,6 +14,7 @@ import {
   Img,
   Stack,
   SimpleGrid,
+  Center,
 } from "@chakra-ui/react";
 import { Header } from "./components/Header";
 import { Divider } from "./components/Divider";
@@ -25,10 +26,10 @@ import { Course } from "./components/Course";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box w="100vw" h="100%" bgColor="white">
+    <Box w="100vw" h="100%">
       <Header />
 
-      <Container as="main" maxW="container.xl">
+      <Container as="main" maxW="container.xl" mt="28">
         <Flex
           id="initial"
           as="section"
@@ -81,8 +82,7 @@ export const App = () => (
             borderBottom="2px"
             borderBottomColor="blue.400"
             mb="10"
-            w="160px"
-            textAlign="center"
+            px="4"
           >Cursos</Heading>
 
           <SimpleGrid columns={3} gap="14">
@@ -111,6 +111,45 @@ export const App = () => (
               imgUrl="https://cdn-icons-png.flaticon.com/512/381/381274.png"
             />
           </SimpleGrid>
+        </Flex>
+
+        <Divider option="left" />
+
+        <Flex
+          id="responsible"
+          as="section" alignItems="center"
+          justifyContent="center"
+          flexDir="column"
+          mt="-100px"
+        >
+          <Heading
+            as="h4"
+            color="blue.600"
+            borderBottom="2px"
+            borderBottomColor="blue.400"
+            mb="10"
+            px="4"
+          >Responsável</Heading>
+
+          <Flex w="full" justifyContent="space-evenly">
+            <Img
+              w="200px"
+              src="https://www.ciadeestagios.com.br/vagas/rogga/assets/mulher-negra-sorrindo-f3681e60b1.png" />
+
+            <Center flexDir="column">
+              <Text color="black">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, consequuntur.<br />
+                Natus, quod possimus aspernatur voluptates culpa quos aperiam nisi fuga corporis<br />
+                fugit repudiandae ratione esse cum iste, architecto consectetur laborum.
+              </Text>
+
+              <Text color="black" mt="10">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, consequuntur.<br />
+                Natus, quod possimus aspernatur voluptates culpa quos aperiam nisi fuga corporis<br />
+                fugit repudiandae ratione esse cum iste, architecto consectetur laborum.
+              </Text>
+            </Center>
+          </Flex>
         </Flex>
       </Container>
     </Box>
