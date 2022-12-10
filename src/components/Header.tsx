@@ -4,7 +4,7 @@ import logoImg from "../assets/logo.svg";
 
 export function Header() {
   return (
-    <Flex bg="#172E43" px="10" py="2" justifyContent="space-between">
+    <Flex bg="blue.600" px="10" py="2" justifyContent="space-between">
       <Flex alignItems="center">
         <Img src={logoImg} w="80px" />
 
