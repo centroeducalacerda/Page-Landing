@@ -4,7 +4,16 @@ import logoImg from "../assets/logo.svg";
 
 export function Header() {
   return (
-    <Flex bg="blue.600" px="10" py="2" justifyContent="space-between">
+    <Flex
+      w="full"
+      bg="blue.600"
+      px="10"
+      py="2"
+      justifyContent="space-between"
+      position="fixed"
+      top="0"
+      left="0"
+      zIndex="100">
       <Flex alignItems="center">
         <Img src={logoImg} w="80px" />
 
