@@ -24,7 +24,7 @@ export function Course({ text, imgUrl }: Props) {
 
       <Divider bg="white" />
 
-      <Text my="3" mx="4" align="center">{text}</Text>
+      <Text my="3" mx="4" align="center" color="white">{text}</Text>
     </Flex>
   );
 }

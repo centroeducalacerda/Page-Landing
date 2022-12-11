@@ -29,6 +29,7 @@ export function Header() {
           as="h4"
           fontSize={["sm", "lg"]}
           ml={["2", "4"]}
+          color="white"
         >Centro Educacional Lacerda</Heading>
       </Flex>
 
@@ -61,10 +62,29 @@ export function Header() {
 
                 <DrawerBody>
                   <VStack spacing="10" justifyContent="center" h="full">
-                    <Link textTransform="uppercase" fontSize="2xl" href="#initial">Início</Link>
-                    <Link textTransform="uppercase" fontSize="2xl" href="#courses">Cursos</Link>
-                    <Link textTransform="uppercase" fontSize="2xl" href="#responsible">Responsável</Link>
-                    <Link textTransform="uppercase" fontSize="2xl" href="#contacts">Contatos</Link>
+                    <Link
+                      textTransform="uppercase"
+                      fontSize="2xl"
+                      onClick={onClose}
+                      href="#initial">Início</Link>
+
+                    <Link
+                      textTransform="uppercase"
+                      fontSize="2xl"
+                      onClick={onClose}
+                      href="#courses">Cursos</Link>
+
+                    <Link
+                      textTransform="uppercase"
+                      fontSize="2xl"
+                      onClick={onClose}
+                      href="#responsible">Responsável</Link>
+                      
+                    <Link
+                      textTransform="uppercase"
+                      fontSize="2xl"
+                      onClick={onClose}
+                      href="#contacts">Contatos</Link>
                   </VStack>
                 </DrawerBody>
               </DrawerContent>
@@ -74,10 +94,10 @@ export function Header() {
           :
           (
             <HStack spacing="4" fontSize="lg" fontWeight={600}>
-              <Link href="#initial">Início</Link>
-              <Link href="#courses">Cursos</Link>
-              <Link href="#responsible">Responsável</Link>
-              <Link href="#contacts">Contatos</Link>
+              <Link color="white" href="#initial">Início</Link>
+              <Link color="white" href="#courses">Cursos</Link>
+              <Link color="white" href="#responsible">Responsável</Link>
+              <Link color="white" href="#contacts">Contatos</Link>
             </HStack>
           )
       }
