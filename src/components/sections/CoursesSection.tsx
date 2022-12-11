@@ -1,5 +1,5 @@
 import { Flex, Heading, SimpleGrid } from "@chakra-ui/react";
-import { Course } from "./Course";
+import { Course } from "../Course";
 
 export function CoursesSection() {
   return (

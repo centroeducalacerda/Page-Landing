@@ -3,9 +3,9 @@ import { Flex, Box, Heading, Stack, Img, Text } from "@chakra-ui/react";
 import { BiTime } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
-import IllustrationSchool from "./../assets/illustration_education.svg";
+import IllustrationSchool from "../../assets/illustration_education.svg";
 
-import { Infos } from "./Infos";
+import { Infos } from "../Infos";
 
 export function InitialSection() {
   return (
@@ -34,9 +34,9 @@ export function InitialSection() {
         </Text>
 
         <Stack direction="column">
-          <Infos text="Mauriti, Ceará" icon={FiMapPin} />
+          <Infos text="R. Chagas Sampaio Nº 615 - Mauriti/CE" icon={FiMapPin} />
 
-          <Infos text="(88) 94002-8922" icon={BsTelephone} />
+          <Infos text="(88) 99626-1283" icon={BsTelephone} />
 
           <Infos text="08:00 - 17:00" icon={BiTime} />
         </Stack>

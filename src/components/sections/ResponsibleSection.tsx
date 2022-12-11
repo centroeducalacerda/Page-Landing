@@ -4,7 +4,8 @@ export function ResponsibleSection() {
   return (
     <Flex
       id="responsible"
-      as="section" alignItems="center"
+      as="section" 
+      alignItems="center"
       justifyContent="center"
       flexDir="column"
       mt="-100px"

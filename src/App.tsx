@@ -3,12 +3,12 @@ import { ChakraProvider, Box, Container } from "@chakra-ui/react";
 
 import { Header } from "./components/Header";
 import { Divider } from "./components/Divider";
-
+import { InitialSection } from "./components/sections/InitialSection";
+import { CoursesSection } from "./components/sections/CoursesSection";
+import { ResponsibleSection } from "./components/sections/ResponsibleSection";
+import { ContactsSection } from "./components/sections/ContactsSection";
 
 import { theme } from "./styles/theme";
-import { InitialSection } from "./components/InitialSection";
-import { CoursesSection } from "./components/CoursesSection";
-import { ResponsibleSection } from "./components/ResponsibleSection";
 
 const Fade = require("react-reveal/Fade");
 
@@ -28,6 +28,10 @@ export const App = () => (
           <Divider option="left" />
 
           <ResponsibleSection />
+
+          <Divider option="right" />
+
+          <ContactsSection />
         </Fade>
       </Container>
     </Box>
