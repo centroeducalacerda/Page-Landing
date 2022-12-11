@@ -1,10 +1,12 @@
-import { Flex, Heading, Img, Center, Text } from "@chakra-ui/react";
+import { Flex, Heading, Img, Center, Text, Box } from "@chakra-ui/react";
+
+import SolangePhoto from "../../assets/solange_photo.png";
 
 export function ResponsibleSection() {
   return (
     <Flex
       id="responsible"
-      as="section" 
+      as="section"
       alignItems="center"
       justifyContent="center"
       flexDir="column"
@@ -26,13 +28,26 @@ export function ResponsibleSection() {
         flexDir={["column", "row"]}
         px={["", "4"]}
       >
-        <Img
-          w={["200px", "", "250px", "300px"]}
-          src="https://www.ciadeestagios.com.br/vagas/rogga/assets/mulher-negra-sorrindo-f3681e60b1.png" />
+        <Box
+          pos="relative"
+          _before={{
+            content: `""`,
+            height: "100%",
+            width: "100%",
+            background: "blue.600",
+            position: "absolute",
+            top: "0",
+            left: "0",
+            zIndex: 0,
+            rounded: "md"
+          }}
+        >
+          <Img w={["200px", "", "250px", "300px"]} pos="relative" src={SolangePhoto} />
+        </Box>
 
         <Center flexDir="column" mt={["6", "0"]} ml={["", "0"]}>
           <Text color="black" textAlign={["center", "justify"]} w={["", "fit-content", "400px"]}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, consequuntur.<br />
+            A <strong>Solange Lacerda</strong> sit amet, consectetur adipisicing elit. Rem, consequuntur.<br />
             Natus, quod possimus aspernatur voluptates culpa quos aperiam nisi fuga corporis<br />
             fugit repudiandae ratione esse cum iste, architecto consectetur laborum.
           </Text>
