@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Stack, Img, Text } from "@chakra-ui/react";
+import { Flex, Box, Heading, Stack, Img, Text, useBreakpointValue } from "@chakra-ui/react";
 
 import { BiTime } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
@@ -8,6 +8,11 @@ import IllustrationSchool from "../../assets/illustration_education.svg";
 import { Infos } from "../Infos";
 
 export function InitialSection() {
+  const isPhoneVersion = useBreakpointValue({
+    base: true,
+    md: false
+  });
+
   return (
     <Flex
       id="initial"
@@ -24,7 +29,7 @@ export function InitialSection() {
             color="blue.600"
             lineHeight="1"
           >CELL</Heading>
-          <Text>Centro Educacional Lacerda</Text>
+          <Text fontSize="lg">Centro Educacional Lacerda</Text>
         </Box>
 
         <Text my="8">
@@ -42,7 +47,11 @@ export function InitialSection() {
         </Stack>
       </Box>
 
-      <Img src={IllustrationSchool} w="400px" />
+      {
+        !isPhoneVersion && (
+          <Img src={IllustrationSchool} w="400px" />
+        )
+      }
     </Flex>
   );
 }

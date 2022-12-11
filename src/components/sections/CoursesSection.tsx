@@ -20,7 +20,7 @@ export function CoursesSection() {
         px="4"
       >Cursos</Heading>
 
-      <SimpleGrid columns={3} gap="14">
+      <SimpleGrid columns={[1, 2, 3]} gap="14">
         <Course
           text="Enfermagem"
           imgUrl="https://seeklogo.com/images/E/enfermagem-logo-97FBC4865A-seeklogo.com.png"

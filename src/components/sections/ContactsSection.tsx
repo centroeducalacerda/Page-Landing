@@ -25,17 +25,17 @@ export function ContactsSection() {
         px="4"
       >Contatos</Heading>
 
-      <Flex color="black" w="full" justifyContent="space-evenly" mt="10">
-        <Box w="24rem">
-          <Heading as="h5" fontWeight={700} fontSize="4xl" mb="4">Entre em contato com a gente</Heading>
+      <Flex w="full" mt="10" color="black" justifyContent="space-evenly" flexDir={["column", "column", "column", "row"]}>
+        <Box w={["fit-content", "", "", "24rem"]}>
+          <Heading as="h5" fontWeight={700} fontSize="4xl" mb={["2", "4"]}>Entre em contato com a gente</Heading>
 
           <Text color="#757575" fontSize="lg">
-            Entre em contato com a <strong>CELL</strong> e venha conhecer <br />
+            Entre em contato com a <strong>CELL</strong> e venha conhecer
             nossos cursos e nos seguir em nossas redes sociais
           </Text>
         </Box>
 
-        <VStack alignItems="flex-start">
+        <VStack alignItems="flex-start" mt={["6", "6", "10", "0"]}>
           <Infos text="(88) 99626-1283" icon={BsTelephone} />
           {/* <Infos text="emailexemplo@gmail.com" icon={HiOutlineMail} /> */}
           <Infos text="@centro.edulacerda" icon={BsInstagram} />
