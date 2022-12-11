@@ -1,7 +1,6 @@
 import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import { BsTelephone, BsInstagram } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
-import { HiOutlineMail } from "react-icons/hi";
 
 import { Infos } from "../Infos";
 

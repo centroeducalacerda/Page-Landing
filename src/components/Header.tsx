@@ -1,5 +1,4 @@
-import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, HStack, Icon, IconButton, Img, Input, Link, useBreakpointValue, useDisclosure, VStack } from "@chakra-ui/react";
-import React from "react";
+import { Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, Heading, HStack, Icon, IconButton, Img, Link, useBreakpointValue, useDisclosure, VStack } from "@chakra-ui/react";
 import { RiMenuLine } from "react-icons/ri";
 
 import logoImg from "../assets/logo.svg";
