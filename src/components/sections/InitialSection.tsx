@@ -3,8 +3,9 @@ import { Flex, Box, Heading, Stack, Img, Text, useBreakpointValue } from "@chakr
 import { BiTime } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
-import IllustrationSchool from "../../assets/illustration_education.svg";
+import { HiOutlineMail } from "react-icons/hi";
 
+import IllustrationSchool from "../../assets/illustration_education.svg";
 import { Infos } from "../Infos";
 
 export function InitialSection() {
@@ -42,6 +43,8 @@ export function InitialSection() {
           <Infos text="R. Chagas Sampaio Nº 615 - Mauriti/CE" icon={FiMapPin} />
 
           <Infos text="(88) 99626-1283" icon={BsTelephone} />
+          
+          <Infos text="centro.lacerda@gmail.com" icon={HiOutlineMail} />
 
           <Infos text="08:00 - 17:00" icon={BiTime} />
         </Stack>

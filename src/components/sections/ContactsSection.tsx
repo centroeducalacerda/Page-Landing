@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
+
 import { BsTelephone, BsInstagram } from "react-icons/bs";
-import { FiMapPin } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
 
 import { Infos } from "../Infos";
 
@@ -36,9 +37,8 @@ export function ContactsSection() {
 
         <VStack alignItems="flex-start" mt={["6", "6", "10", "0"]}>
           <Infos text="(88) 99626-1283" icon={BsTelephone} />
-          {/* <Infos text="emailexemplo@gmail.com" icon={HiOutlineMail} /> */}
           <Infos text="@centro.edulacerda" icon={BsInstagram} />
-          <Infos text="R. Chagas Sampaio Nº 615 - Mauriti/CE" icon={FiMapPin} />
+          <Infos text="centro.lacerda@gmail.com" icon={HiOutlineMail} />
         </VStack>
       </Flex>
     </Flex>
